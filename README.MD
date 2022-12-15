@@ -97,6 +97,10 @@ To setup the server you can use the docker-compose program:
 * Copy the .env.template to .env and edit it with the settings you want. The only mandatory variable is ADMINPASSWORD and just the first time the server is executed (once is started at least once, it can be removed). The other variables are optional.
 * Run the `docker-compose up -d` command to start the server.
 
+### In case of there is no latest build with right image
+`docker compose -f docker-compose.yml -f docker-compose.build.yml up -d`
+This will build the image with latest version of the game
+
 ## Scripts folder
 
 In the scripts folders there are three scripts:
