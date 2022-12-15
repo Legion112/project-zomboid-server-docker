@@ -5,7 +5,7 @@ server.build.stop:
 server.build.start:
 	docker compose ${file} up -d
 server.build.logs:
-	docker compose ${file} logs
+	docker compose ${file} logs -f
 server.data.download:
 	scp -r root@${host}:/root/pzmy/data .
 	scp -r root@${host}:/root/pzmy/workshop-mods .
